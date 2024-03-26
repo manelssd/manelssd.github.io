@@ -1,121 +1,110 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemple HTML5 Sémantique</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        header,
-        nav,
-        section,
-        article,
-        aside,
-        footer {
-            border: 1px solid #ddd;
-            margin-bottom: 20px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        header {
-            background-color: #e6a3e7;
-            background-image: url("https://www.mondialtourisme.fr/sites/default/files/header-bandeau/2022-10/tunisie-header-3.jpg");
-            color: #186ae6;
-            text-align: center;
-            padding: 20px 0;
-        }
-        nav{
-            background-color: #81ace9be;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #b1eeef;
-            font-weight: bold;
-        }
-        #accueil {
-            background-color: #e8df8abf;
-        }
-
-        section h2,
-        article h3,
-        aside h2 {
-            color: #91c2f5;
-        }
-
-        article p {
-            color: #555;
-        }
-
-        aside {
-            background-color: #f8f9fa;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            color: #777;
-        }
-    </style>
+    <title>Mon site officiel</title>
+    <link rel="stylesheet" href="sitestyle.css">
 </head>
 
 <body>
-    <header>
-        <h1>Mon Site Web</h1>
-        <p>Un site web sémantique et informatif dans le cadre d'une formation en HTML et en CSS.</p>
+    <header id="titre">
+        <h1>Mon jardin urbain </h1>
+        <h2>votre guide le plus inclusif du jardinage</h2>
     </header>
     <nav>
         <ul>
             <li><a href="#accueil">Accueil</a></li>
             <li><a href="#articles">Articles</a></li>
+            <li><a href="#guides">guides</a></li>
+            <li><a href="#calendrier de jardinage">calendrier de jardinage</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <section id="accueil">
-        <h2>Bienvenue sur Mon Site Web</h2>
-        <p>Ce site offre des informations utiles et intéressantes sur divers sujets.</p>
+        <h2>Bienvenue</h2>
+        <p>Nos guides simples, étape par étape, éliminent le mystère des techniques de jardinage courantes, telles que
+            le semis, la taille et le bouturage. De plus, apprenez à prendre soin de votre jardin en cas de conditions
+            météorologiques défavorables et à cultiver des fruits et légumes.</p>
+        <img src="https://i0.wp.com/savvygardening.com/wp-content/uploads/2021/06/sit-on-top-planters-balcony-garden.jpg?resize=600%2C401&ssl=1"
+            alt="balcon" style="width: 250px;height:250px;">
     </section>
     <section id="articles">
-        <article>
-            <h3>Les bienfaits de l'exercice</h3>
-            <p>Pratiquer régulièrement une activité physique a de nombreux avantages pour la
-                santé.</p>
-        </article>
-        <article>
-            <h3>Recettes saines et délicieuses</h3>
-            <p>Découvrez des recettes faciles à préparer qui sont à la fois délicieuses et
-                nutritives.</p>
-        </article>
+        <h2> Nos articles</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni tempora ea blanditiis consectetur dolor
+            minima, molestiae delectus consequuntur quia hic pariatur sequi, corrupti dignissimos nostrum nisi illo rem.
+            Voluptates, error!</p>
+
     </section>
-    <aside>
-        <h2>À la une</h2>
-        <p>Les dernières actualités et événements importants.</p>
-    </aside>
+    <section id="guides">
+        <h2>Nos guides pratiques</h2>
+        <label for="choixguide">Sélectionnez un guide:</label>
+        <select id="choixguide" name="choixguide">
+            <option value="culture des fruits et légumes">culture des fruits et légumes</option>
+            <option value="propagation">propagation</option>
+            <option value="plantes ornementales">des plantes ornementales</option>
+            <option value="sol">sol</option>
+            <br>
+        </select>
+    </section>
+    <section id="Calendrier de Jardinage">
+        <h2> Calendrier de jardinage</h2>
+        <h3>Type de plante</h3>
+        <label for="choixtype">Sélectionnez un type de plante :</label>
+        <select id="choixtype" name="choixtype">
+            <option value="Annuelle">Annuelle</option>
+            <option value="pérenne">Pérenne</option>
+            <option value="cactus et secculent">cactus et secculent</option>
+            <option value="roses" selected>roses</option>
+            <option value="bulbes">bulbes</option>
+        </select>
+        <h3>date de semis</h3>
+        <p>veuillez entrer la date de semis souhaitée</p>
+        <input type="date" id="date de semis" name="date de semis" required>
+        <h3>Zone bioclimatique</h3>
+        <p>veuillez choisir la zone bioclimatique</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjiHvjS-nnXNYkovZ7pr0d3TPyfGMErENj5o3h0Vqe94aGsVaecmMZBGE998bSEeoXrUw&usqp=CAU"
+            alt="climat">
+        <h2>Maintenance</h2>
+        <p>choisir le niveau de maintenance souhaitée</p>
+        <h3>besoin en eau </h3>
+        <input type="radio" id="faible" name="eau" value="faible">
+        <label for="faible">faible</label>
+        <input type="radio" id="moyen" name="eau" value="moyen">
+        <label for="moyen">moyen</label>
+        <input type="radio" id="elevé" name="eau" value="elevé">
+        <label for="elevé">elevé</label>
+        <h3>couleur</h3>
+        <p>veuillez choisir une couleur</p>
+        <input type="color" id="couleurPalette" name="couleurPalette" list="couleursDisponibles">
+        <datalist id="couleursDisponibles">
+            <option>#ff0000</option>
+            <option>#00ff00</option>
+            <option>#0000ff</option>
+        </datalist>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>laisser votre adresse electronique et votre message</p>
+        <div>
+            <form action="/#" method="post">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="votre nom" required>
+                <br>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" autocomplete="email"> essentiel
+                <br>
+                <textarea id="commentaire" name="commentaire" rows="4" cols="50" placeholder="Entrez
+votre commentaire ici..."></textarea>
+                <br>
+    </section>
     <footer>
-        <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+        <p>
+            &copy; 2024. Mon Jardin Urbain. Tous droits réservés
+        </p>
     </footer>
 </body>
 
